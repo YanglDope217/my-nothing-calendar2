@@ -21,7 +21,11 @@
 
     <!-- Application theme. -->
     <style name="CalendarAppThemeWithActionBar" parent="Base.CalendarAppThemeWithActionBar">
-
+    <item name="android:fontFamily">@font/robotomono</item>
+    <item name="fontFamily">@font/robotomono</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:colorAccent">@color/acid_red</item>
+    <item name="android:windowBackground">@color/black</item>
     </style>
 
     <style name="Base.CalendarAppThemeWithActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
