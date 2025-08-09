@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="colorBackgroundBlack">
-        <item name="android:colorBackground">@color/bg_black</item>
+    <!-- ═══════════════════════════════════════════════════
+         Nothing-style  COLOR  PALETTES
+         ═══════════════════════════════════════════════════ -->
+
+    <!-- 1. Красный акцент (#FF375F) — дефолт Nothing -->
+    <style name="colorAccentPrimaryNothingRed">
+        <item name="colorAccent">@color/accent_red</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
     </style>
 
+    <!-- 2. Фиолетовый акцент (#8E6CFF) — альтернативный -->
+    <style name="colorAccentPrimaryNothingViolet">
+        <item name="colorAccent">@color/accent_violet</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
+    <!-- 3. Чёрный фон без полу-тона (если нужен) -->
+    <style name="colorBackgroundBlack">
+        <item name="android:colorBackground">@color/black</item> <!-- был bg_black -->
+    </style>
+
+    <!-- ────────────────────────────────────────────────
+         ОРИГИНАЛЬНЫЕ ЦВЕТОВЫЕ СХЕМЫ Etar (оставляем)
+         ──────────────────────────────────────────────── -->
     <style name="colorAccentPrimaryDefault">
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorPrimary">@color/colorAccent</item>
