@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!--PREF THEME-->
+    <!-- PREF THEME -->
     <string-array name="pref_theme_entries" translatable="false" tools:ignore="InconsistentArrays">
         <item>@string/preferences_light_theme</item>
         <item>@string/preferences_dark_theme</item>
@@ -14,7 +14,7 @@
         <item>black</item>
     </string-array>
 
-    <!-- -------------- REMINDER METHODS -------------- -->
+    <!-- REMINDER METHODS -->
     <!-- Choices for the "Reminder method" spinner. -->
     <string-array name="reminder_methods_labels">
         <item>Notification</item>
@@ -31,7 +31,7 @@
         <item>4</item>  <!-- METHOD_ALARM -->
     </integer-array>
 
-    <!-- -------------- REMINDER MINUTES -------------- -->
+    <!-- REMINDER MINUTES -->
     <integer-array name="reminder_minutes_values" translatable="false">
         <item>0</item><item>1</item><item>5</item><item>10</item><item>15</item><item>20</item>
         <item>25</item><item>30</item><item>45</item><item>60</item><item>120</item><item>180</item>
@@ -48,14 +48,14 @@
         <item>"20160"</item><item>"40320"</item>
     </string-array>
 
-    <!-- -------------- SNOOZE DELAY -------------- -->
+    <!-- SNOOZE DELAY -->
     <string-array name="preferences_default_snooze_delay_values" translatable="false">
         <item>"-1"</item><item>"5"</item><item>"10"</item><item>"15"</item><item>"20"</item>
         <item>"25"</item><item>"30"</item><item>"45"</item><item>"60"</item><item>"120"</item>
         <item>"180"</item><item>"720"</item>
     </string-array>
 
-    <!-- -------------- DEFAULT START PAGE -------------- -->
+    <!-- DEFAULT START PAGE -->
     <string-array name="default_start_entries" translatable="false">
         <item>@string/default_start_last</item>
         <item>@string/day_view</item>
@@ -68,7 +68,7 @@
         <item>-2</item><item>2</item><item>3</item><item>4</item><item>1</item>
     </string-array>
 
-    <!-- -------------- WEEK START DAY -------------- -->
+    <!-- WEEK START DAY -->
     <string-array name="preferences_week_start_day_labels">
         <item>Locale default</item><item>Saturday</item><item>Sunday</item><item>Monday</item>
     </string-array>
@@ -87,7 +87,7 @@
         <item>"2"</item><item>"3"</item><item>"4"</item><item>"5"</item><item>"6"</item><item>"7"</item>
     </string-array>
 
-    <!-- -------------- DEFAULT EVENT DURATION -------------- -->
+    <!-- DEFAULT EVENT DURATION -->
     <string-array name="preferences_default_duration_labels" translatable="false">
         <item>@string/zero_minutes</item><item>@string/fifteen_minutes</item>
         <item>@string/thirty_minutes</item><item>@string/one_hour</item>
@@ -98,7 +98,7 @@
         <item>0</item><item>15</item><item>30</item><item>60</item><item>90</item><item>120</item>
     </string-array>
 
-    <!-- -------------- AVAILABILITY -------------- -->
+    <!-- AVAILABILITY -->
     <string-array name="availability">
         <item>Busy</item><item>Available</item><item>Tentative</item>
     </string-array>
@@ -107,7 +107,7 @@
         <item>0</item><item>1</item><item>2</item>
     </integer-array>
 
-    <!-- -------------- VISIBILITY, RESPONSES, DELETE OPTIONS -------------- -->
+    <!-- VISIBILITY, RESPONSES, DELETE OPTIONS -->
     <string-array name="visibility" translatable="false">
         <item>@string/visibility_default</item>
         <item>@string/visibility_confidential</item>
