@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- PREF THEME -->
+    <! PREF THEME >
     <string-array name="pref_theme_entries" translatable="false" tools:ignore="InconsistentArrays">
         <item>@string/preferences_light_theme</item>
         <item>@string/preferences_dark_theme</item>
@@ -14,7 +14,7 @@
         <item>black</item>
     </string-array>
 
-    <!-- REMINDER METHODS -->
+    <! REMINDER METHODS >
     <!-- Choices for the "Reminder method" spinner. -->
     <string-array name="reminder_methods_labels">
         <item>Notification</item>
@@ -23,7 +23,7 @@
         <item>Alarm</item>
     </string-array>
 
-    <!-- map labels → constants -->
+    <! map labels → constants >
     <integer-array name="reminder_methods_values" translatable="false">
         <item>1</item>  <!-- METHOD_ALERT -->
         <item>2</item>  <!-- METHOD_EMAIL -->
@@ -31,7 +31,7 @@
         <item>4</item>  <!-- METHOD_ALARM -->
     </integer-array>
 
-    <!-- REMINDER MINUTES -->
+    <! REMINDER MINUTES >
     <integer-array name="reminder_minutes_values" translatable="false">
         <item>0</item><item>1</item><item>5</item><item>10</item><item>15</item><item>20</item>
         <item>25</item><item>30</item><item>45</item><item>60</item><item>120</item><item>180</item>
@@ -39,7 +39,7 @@
         <item>10080</item><item>20160</item><item>40320</item>
     </integer-array>
 
-    <!-- значения по-умолчанию для преференса «напоминание» -->
+    <! значения по-умолчанию для преференса «напоминание» >
     <string-array name="preferences_default_reminder_values" translatable="false">
         <item>"-2147483648"</item><item>"0"</item><item>"1"</item><item>"5"</item><item>"10"</item>
         <item>"15"</item><item>"20"</item><item>"25"</item><item>"30"</item><item>"45"</item>
@@ -48,14 +48,14 @@
         <item>"20160"</item><item>"40320"</item>
     </string-array>
 
-    <!-- SNOOZE DELAY -->
+    <! SNOOZE DELAY >
     <string-array name="preferences_default_snooze_delay_values" translatable="false">
         <item>"-1"</item><item>"5"</item><item>"10"</item><item>"15"</item><item>"20"</item>
         <item>"25"</item><item>"30"</item><item>"45"</item><item>"60"</item><item>"120"</item>
         <item>"180"</item><item>"720"</item>
     </string-array>
 
-    <!-- DEFAULT START PAGE -->
+    <! DEFAULT START PAGE >
     <string-array name="default_start_entries" translatable="false">
         <item>@string/default_start_last</item>
         <item>@string/day_view</item>
@@ -77,7 +77,7 @@
         <item>"-1"</item><item>"7"</item><item>"1"</item><item>"2"</item>
     </string-array>
 
-    <!-- -------------- DAYS PER WEEK -------------- -->
+    <!-- DAYS PER WEEK -->
     <string-array name="preferences_days_per_week_labels" translatable="false">
         <item>@string/two_days</item><item>@string/three_days</item><item>@string/four_days</item>
         <item>@string/five_days</item><item>@string/six_days</item><item>@string/seven_days</item>
@@ -132,9 +132,8 @@
     <!-- Для экономии места длинные служебные массивы опущены. Они могут остаться
          выше без изменений – главное, чтобы были ДО закрывающего </resources>. -->
 
-    <!-- ==================================================================== -->
-    <!--                       NOTHING-PHONE  ACCENT                          -->
-    <!-- ==================================================================== -->
+    <!--NOTHING-PHONE  ACCENT -->
+    
     <string-array name="pref_color_options" translatable="false">
         <item>@string/color_nothing_red</item>
         <item>@string/color_nothing_violet</item>
