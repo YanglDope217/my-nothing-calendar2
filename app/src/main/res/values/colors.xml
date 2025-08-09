@@ -1,16 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- базовые -->
-    <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
-    <color name="darkGray">#121212</color>
-
-    <!-- акцент (можно будет переключать) -->
-    <color name="accent_red">#FF375F</color>
-    <color name="accent_violet">#8E6CFF</color>
-
-    <!-- подключаем как основные -->
-    <color name="colorPrimary">@color/black</color>
-    <color name="colorPrimaryDark">@color/black</color>
-    <color name="colorAccent">@color/accent_red</color>
-</resources>
+<color name="black">#000000</color>
+<color name="white">#FFFFFF</color>
+<color name="accent_red">#FF375F</color>
+<color name="accent_violet">#8E6CFF</color>
+<!-- оставьте bg_black, если его использует другой код -->
+<color name="bg_black">#000000</color>
