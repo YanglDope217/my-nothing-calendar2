@@ -2,32 +2,41 @@ name: Android CI
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-  workflow_dispatch:
+    branches: [ master ]      # собираем при каждом push
+  workflow_dispatch:          # и вручную по кнопке "Run workflow"
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
+      # 1. Клонируем код
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup JDK 17 + cache
+      # 2. Ставим JDK 17 + кэш Gradle
+      - name: Setup JDK 17 & cache
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
           cache: gradle
 
+      # 3. Даем gradlew право на запуск
       - name: Grant gradlew rights
         run: chmod +x gradlew
 
-      - name: Assemble release
-        run: ./gradlew assembleRelease
+      # 4. Собираем debug-версию (она точно есть)
+      - name: Build debug APK
+        run: ./gradlew assembleDebug
 
-      - name: Upload APK
+      # 5. Показываем, какие *.apk получились (удобно смотреть лог)
+      - name: List APKs
+        run: find . -type f -name "*.apk" -print
+
+      # 6. Загружаем ВСЕ apk как артефакт
+      - name: Upload all APKs
         uses: actions/upload-artifact@v4
         with:
-          name: EtarRelease
-          path: app/build/outputs/apk/release/app-release.apk
+          name: APKs
+          path: "**/build/outputs/apk/**/*.apk"
